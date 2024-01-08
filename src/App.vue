@@ -19,9 +19,12 @@ export default {
     AppMain,
     AppFooter,
   },
+
+  
   
 }
 </script>
 <style lang="scss">
+@use './styles/general.scss' as *;
   
 </style>
