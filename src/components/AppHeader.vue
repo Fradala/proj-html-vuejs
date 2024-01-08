@@ -46,14 +46,21 @@
     
     <article class="jumbo container-fluid">
             <div class="row">
-                <div class="d-flex justify-content-around">
+                <div class="d-flex justify-content-around p-1">
                     <p>ciao</p>
                     <p>ciao</p>
                     <p>ciao</p>
                 </div>
             </div>
-            <div>
-                
+            <div class="jumbotron row">
+                <div class="">
+                    <p>info</p>
+                    <p>testo lungo</p>
+                    <button class="button-bianco">
+                        Learn more about us
+                    </button>
+                </div>
+
             </div>
 
         </article>
@@ -84,7 +91,20 @@ ul{
 }
 
 .jumbo{
-    border: 1px solid red;
+    color: white;
+    background-color: #1e3120;
+    height: 650px ;
+
+
+    .jumbotron{
+        background-image: url(../assets/images/demo-pet-supplies.jpg);
+        height: 500px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+        
+    }
 }
 
     
