@@ -101,7 +101,7 @@ ul{
 
 
     .jumbotron{
-        background-image: url(../assets/images/demo-pet-supplies.jpg);
+        background-image: url(../assets/images/banner-5-2x-scaled.jpg);
         height: 500px;
         background-size: cover;
         background-position: center center;
