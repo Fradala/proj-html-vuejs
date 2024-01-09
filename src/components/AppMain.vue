@@ -186,7 +186,42 @@
             </button>
 
         </div>
+       
     </section>
+    <section class="altre-info">
+            <div class="container">
+                <div class="d-flex justify-contente-between">
+                    <div class="icone">
+                        <i class="fa-solid fa-truck"></i>
+                        <p>
+                            Free worldwild dliveries
+                        </p>
+                    </div>
+                    <div class="icone">
+                        <i class="fa-regular fa-map"></i>
+                        <p>
+                            Find store near you
+                        </p>
+                    </div>
+                    <div class="icone">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <p>
+                            Best prices guarranteed
+                        </p>
+                    </div>
+                    <div class="icone">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <p>
+                            All credit car accepted
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </section>
+
     
         
     
@@ -471,6 +506,33 @@ export default {
     }
 }
 
+.altre-info{
+    background-color: #1e3120;
+    height: 150px;
+    width: 100%;
+
+    .icone{
+        margin-top: 50px;
+        color: white;
+        text-align: center;
+        width: 25%;
+
+       
+    }
+    i{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    p{
+        font-size: 10px;
+        color: #cacbca;
+    }
+
+    
+    
+
+
+}
 
 
     
