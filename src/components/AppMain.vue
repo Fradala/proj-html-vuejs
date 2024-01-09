@@ -121,7 +121,33 @@
 
 
     </section>
-    
+   <article>
+        <div class="posta p-5">
+            <h4 class="mb-4">
+                Join your newsletter
+            </h4>
+
+            <p class="mb-4">
+                voendkd dekiddjd dejdjdhd djdjd ejejdj dddj <br> 
+                shsjssj dhdjd bjdjhdd
+            </p>
+
+            <div class="d-flex">
+                <input class="me-4" type="search" placeholder="insert your email ...*">
+                <button>subscribe</button>
+            </div>
+
+
+        </div>
+   </article>
+    <div class="text-center mt-5">
+        <h4>
+            Get the best tips & tricks
+        </h4>
+        <p>
+            Recent article
+        </p>
+    </div>
         
     
   
@@ -256,6 +282,8 @@ export default {
     
     height: 350px;
 
+    //position: relative;
+
     .titolo-testimonials{
         font-family: 'Merriweather', serif;
         font-size: 25px;
@@ -291,6 +319,51 @@ export default {
         
 }
 
+.posta{
+    background-image: url(../assets/images/mega-2.jpg);
+    height: 250px;
+    width: 80%;
+    margin: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    //position: absolute;
+    //left: 10%;
+    //top: 250%;
+
+
+
+    h4{
+        font-family: 'Merriweather', serif;
+    }
+
+    p{
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 10px;
+    }
+
+    input{
+        border-radius: 20px;
+        border: none;
+        font-size: 15px;
+        
+    }
+
+   button{
+        border-radius: 20px;
+        background-color: #539f5b;
+        color: white;
+        border: none;
+        font-size: 10px;
+        padding: 5px 20px;
+
+   }
+
+  
+
+    
+}
 
 
 
