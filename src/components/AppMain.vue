@@ -221,6 +221,18 @@
 
 
     </section>
+    <section class="container">
+        <div class="text-center mt-5">
+            <h4>
+                New products arrival
+            </h4>
+            <p>
+                Latest products
+            </p>
+
+        </div>
+        
+    </section>
 
     
         
