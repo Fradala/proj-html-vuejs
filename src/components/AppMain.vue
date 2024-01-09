@@ -226,6 +226,71 @@
             </p>
 
         </div>
+
+
+        <div class="d-flex sei-prodotti">
+            <div>
+                <img src="../assets/images/product-8-200x200.jpg" alt="letto per cani">
+                <p class="descrizione-ogg text-center mt-3">
+                    Colorful ball set
+                </p>
+                <p class="prezzo text-center">
+                    $29.00
+                </p>
+
+            </div>
+            <div>
+                <img src="../assets/images/product-3-200x200.jpg" alt="letto per cani">
+                <p class="descrizione-ogg text-center mt-3">
+                    Dog bone
+                </p>
+                <p class="prezzo text-center">
+                    $28.00 - $18.00
+                </p>
+
+            </div>
+            <div>
+                <img src="../assets/images/product-2-200x200.jpg" alt="letto per cani">
+                <p class="descrizione-ogg text-center mt-3">
+                    Colore per bed
+                </p>
+                <p class="prezzo text-center">
+                    $18.00 - $26.00
+                </p>
+
+            </div>
+            <div>
+                <img src="../assets/images/product-4-200x200.jpg" alt="letto per cani">
+                <p class="descrizione-ogg text-center mt-3">
+                    Animal transport bag
+                </p>
+                <p class="prezzo text-center">
+                    $29.00
+                </p>
+
+            </div>
+            <div>
+                <img src="../assets/images/product-5-200x200.jpg" alt="letto per cani">
+                <p class="descrizione-ogg text-center mt-3">
+                    Animal transport cage
+                </p>
+                <p class="prezzo text-center">
+                    $35.00
+                </p>
+
+            </div>
+            <div>
+                <img src="../assets/images/product-10-200x200.jpg" alt="letto per cani">
+                <p class="descrizione-ogg text-center mt-3">
+                    Closable cat litter
+                </p>
+                <p class="prezzo text-center">
+                    $16.00 
+                </p>
+
+            </div>
+
+        </div>
         
     </section>
 
@@ -282,6 +347,10 @@ export default {
         background-color: #1e3120 ;
         margin-right: 5px;
         width: calc((100% / 3) - 10px);
+
+        
+
+
         
         
         
@@ -339,6 +408,11 @@ export default {
             font-size: 10px;
             margin-bottom: 30px;
 
+            &:hover {
+                background-color: #539f5b;
+                color: white;
+            }
+
         }
     }
 
@@ -363,6 +437,10 @@ export default {
             border: none;
             font-size: 10px;
             margin-bottom: 30px;
+
+            &:hover {
+                background-color: #1e3120;
+            }
         }
     }
     
@@ -555,6 +633,23 @@ export default {
 
 }
 
+
+.sei-prodotti{
+
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        width: calc(100% / 3);
+    }
+
+    .descrizione-ogg{
+        font-size: 15px;
+    }
+
+    .prezzo{
+        font-size: 10px;
+    }
+}
 
     
 </style>
