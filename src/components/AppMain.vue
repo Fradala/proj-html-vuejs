@@ -144,10 +144,50 @@
         <h4>
             Get the best tips & tricks
         </h4>
-        <p>
+        <p class="fs-7">
             Recent article
         </p>
     </div>
+    <!--
+    <section>
+        quattro cards
+
+        <button>Read all article </button>
+            
+    </section>
+    -->
+
+    <section class="due-animali d-flex text-center">
+        <div class="cane">
+            <h5 class="text-uppercase">
+                find the best animals supplies
+            </h5>
+
+            <p>
+                Popular accessories
+            </p>
+
+            <button>
+                View all toys accessories
+            </button>
+
+        </div>
+        <div class="gatto">
+            <h5 class="text-uppercase">
+                find the best animals supplies
+            </h5>
+
+            <p>
+                Popular accessories
+            </p>
+
+            <button>
+                View all toys accessories
+            </button>
+
+        </div>
+    </section>
+    
         
     
   
@@ -363,6 +403,72 @@ export default {
   
 
     
+}
+
+.due-animali{
+
+    .cane{
+        background-image: url(../assets/images/banner-8-2x.jpg);
+        width: 50%;
+        height: 300px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: 90%;
+        color: white;
+
+        h5{
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 10px;
+            margin-top: 100px;
+        }
+        p{
+            font-family: 'Merriweather', serif;
+            font-size: 30px;
+        }
+        button{
+            border-radius: 20px;
+            background-color: white;
+            color: black;
+            border: none;
+            font-size: 10px;
+            padding: 5px 20px;
+
+        }
+    }
+
+    .gatto{
+        background-image: url(../assets/images/banner-9-2x.jpg);
+        width: 50%;
+        height: 300px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: 90%;
+        color: white;
+
+        h5{
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 10px;
+            margin-top: 100px;
+        }
+        p{
+            font-family: 'Merriweather', serif;
+            font-size: 30px;
+        }
+
+        button{
+            border-radius: 20px;
+            background-color: white;
+            color: black;
+            border: none;
+            font-size: 10px;
+            padding: 5px 20px;
+
+        }
+
+
+    }
 }
 
 
