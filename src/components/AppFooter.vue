@@ -55,10 +55,31 @@
                         Subscribe to our <br>
                         newsletter
                     </p>
-                    <input class="mb-4" type="search" placeholder="insert your email ...*">
+                    <input class="mb-4 me-3" type="search" placeholder="insert your email ...*">
                     <button>subscribe</button>
 
                 </div>
+
+            </div>
+            <div>
+                <ul class="contatti">
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        About
+                    </li>
+                    <li>
+                        Blog
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+                    <li>
+                        Shop
+                    </li>
+
+                </ul>
 
             </div>
 
@@ -147,6 +168,12 @@ export default {
         padding: 1rem;
         background-color: #2d462f;
         color: white;
+    }
+
+    .contatti{
+        display: flex;
+        flex-direction: row;
+       
     }
 
 }
