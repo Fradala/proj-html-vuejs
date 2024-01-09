@@ -635,7 +635,8 @@ export default {
 
 
 .sei-prodotti{
-
+    margin: auto;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     div{

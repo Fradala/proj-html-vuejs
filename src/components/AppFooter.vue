@@ -81,13 +81,30 @@
 
                 </ul>
 
+                <div class="icone-social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+
+                </div>
+
             </div>
 
         </div>
+        
+        
 
 
 
    </section>
+   <div class="striscia-nera">
+            <p>
+                @Copyright 2012 - 2020 | Avada Theme bynThemeFusion | All Rights Reserved | Powered by Wordpress
+            </p>
+
+   </div>
 </template>
 <script>
 export default {
@@ -173,9 +190,37 @@ export default {
     .contatti{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        color: white;
+        margin-top: 20px;
+
        
     }
 
+    .icone-social{
+        color: white;
+        text-align: center;
+
+        .fa-brands{
+            margin-right: 10px;
+        }
+    }
+
+    
+
+}
+
+.striscia-nera{
+        background-color: black;
+        padding: 1rem;
+        color: white;
+
+
+        p{
+            font-size: 10px;
+            text-align: center;
+            margin-top: 5px;
+        }
 }
 
     
