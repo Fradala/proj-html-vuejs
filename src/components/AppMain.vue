@@ -9,7 +9,7 @@
     </div>
     <section class="container">
         <!--qui ci vanno le 4 card-->
-
+        <PrimeQuattroCards/>
         <!--qui ci sono le 3 caselle per il cibo-->
        <article class="row d-flex mt-5">
             <div class="casella  text-center">
@@ -75,7 +75,7 @@
                 </div>
             </section>
        </article>
-       <!--Quattro cards-->
+       <SecondeQuattroCards/>
     </section>
     <section class="testimonials">
         <article class="container mt-5">
@@ -149,13 +149,8 @@
         </p>
     </div>
     <!--
-    <section>
-        quattro cards
-
-        <button>Read all article </button>
-            
-    </section>
-    -->
+    <section>quattro cards</section>-->
+    <TerzeQuattroCards/>
 
     <section class="due-animali d-flex text-center">
         <div class="cane">
@@ -240,8 +235,21 @@
   
 </template>
 <script>
+
+import PrimeQuattroCards from './PrimeQuattroCards.vue';
+import SecondeQuattroCards from './SecondeQuattroCards.vue';
+import TerzeQuattroCards from './TerzeQuattroCards.vue';
 export default {
     name: 'AppMain',
+
+    components: {
+        PrimeQuattroCards,
+        SecondeQuattroCards,
+        TerzeQuattroCards,
+
+    }
+
+    
     
 }
 </script>
@@ -407,11 +415,11 @@ export default {
 }
 
 .posta{
-    background-image: url(../assets/images/mega-2.jpg);
+    background-image: url(../assets/images/banner-7-2x-scaled.jpg);
     height: 250px;
     width: 80%;
     margin: auto;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
 
@@ -434,6 +442,7 @@ export default {
         border-radius: 20px;
         border: none;
         font-size: 15px;
+        background-color: #ebebeb;
         
     }
 
