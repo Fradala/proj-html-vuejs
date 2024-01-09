@@ -59,21 +59,65 @@
        </article>
 
        <article class="row best-seller mt-5">
-        <section class=" d-flex justify-content-between">
-            <div>
-                <p>
-                   All-time best seller 
-                </p>
-                <p>
-                    Items everyone loves
-                </p>
-            </div>
-            <div>
-                <button>View all products</button>
-            </div>
-        </section>
-            
+            <section class=" d-flex justify-content-between">
+                <div>
+                    <p>
+                        All-time best seller 
+                    </p>
+                    <p class="testo-grande">
+                        Items everyone loves
+                    </p>
+                </div>
+                <div>
+                    <button class="mt-3">
+                        View all products
+                    </button>
+                </div>
+            </section>
        </article>
+       <!--Quattro cards-->
+    </section>
+    <section class="testimonials">
+        <article class="container mt-5">
+            <h4 class="text-center titolo-testimonials pt-5">
+                Users testimonials
+            </h4>
+            <div class="d-flex text-center pt-4">
+                <div>
+                    <img src="../assets/images/avatar-3-200x200.jpg" alt="foto testimonials">
+                    <p class="descrizione-testimone p-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Ipsum nisi magnam ab  
+                        
+                    </p>
+                    <p>
+                        il nome del testimone 
+                    </p>
+                </div>
+                <div>
+                    <img src="../assets/images/avatar-1-200x200.jpg" alt="foto testimonials">
+                    <p class="descrizione-testimone p-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Ipsum nisi magnam ab  
+                    </p>
+                    <p>
+                        il nome del testimone 
+                    </p>
+                </div>
+                <div>
+                    <img src="../assets/images/avatar-4-200x200.jpg" alt="foto testimonials">
+                    <p class="descrizione-testimone p-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Ipsum nisi magnam ab  
+                    </p>
+                    <p>
+                        il nome del testimone 
+                    </p>
+                </div>
+
+            </div>
+
+        </article>
 
 
     </section>
@@ -85,6 +129,7 @@
 <script>
 export default {
     name: 'AppMain',
+    
 }
 </script>
 <style lang="scss">
@@ -175,10 +220,75 @@ export default {
 
         }
     }
+
+    .best-seller{
+
+
+        p{
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 10px;
+        }
+
+        .testo-grande{
+            font-size: 20px;
+            font-family: 'Merriweather', serif;
+        }
+
+        button{
+            border-radius: 20px;
+            background-color: #539f5b;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            font-size: 10px;
+            margin-bottom: 30px;
+        }
+    }
+    
     
 
 
 
+}
+
+.testimonials{
+    background-color: #1e3120;
+    
+    height: 350px;
+
+    .titolo-testimonials{
+        font-family: 'Merriweather', serif;
+        font-size: 25px;
+        color: white;
+        
+        
+    }
+
+    
+
+   
+
+    img{
+        width: 50px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        
+        
+    }
+
+    .descrizione-testimone{
+        font-size: 13px;
+        color: white;
+        
+    }
+
+    p{
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 10px;
+        color: #cacbca;
+    }
+
+        
 }
 
 
