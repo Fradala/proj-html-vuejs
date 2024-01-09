@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center mt-5">
+    <div class="titoletto text-center mt-5">
         <h1 class="fs-4 mb-3">
             Browse by category
         </h1>
@@ -91,13 +91,24 @@ export default {
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 
+
+.titoletto{
+
+    h1{
+        font-family: 'Merriweather', serif;
+    }
+
+    .sottotitolo{
+        font-size: 10px;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+}
+
 .container{
     width: 80%;
     margin: auto;
 
-    .sottotitolo{
-    font-size:15px;
-    }
+   
 
    
 
@@ -112,6 +123,7 @@ export default {
         h2{
             color: white;
             margin-top: 30px;
+            font-family: 'Merriweather', serif;
         }
         p{
             color:#539f5b ;
@@ -146,6 +158,10 @@ export default {
 
         h3{
             font-size: 10px;
+        }
+
+        p{
+            font-family: 'Merriweather', serif;
         }
 
         button{
