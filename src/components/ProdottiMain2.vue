@@ -52,6 +52,10 @@ export default {
     display: flex;
     width: calc((100% / 4) - 10px);
     flex-wrap: wrap;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
     
 </style>

@@ -4,7 +4,7 @@
             :immagine="prodotto.foto" :oggetto="prodotto.oggetto"
         />
 
-        
+        <img src="../assets/images/product-9-150x150.jpg" alt="">
     </section>
 </template>
 <script>
@@ -24,7 +24,7 @@ export default {
         return {
             prodotti: [
                 {
-                    foto: '..assets/images/product-9-150x150.jpg',
+                    foto: '../assets/images/product-9-150x150.jpg',
                     oggetto: 'Bed (1)',
                 },
                 {
@@ -55,8 +55,12 @@ export default {
 
 .quadrati{
     display: flex;
+    flex-direction: row;
     width: calc((100% / 4) - 10px);
-    flex-wrap: wrap;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    flex-wrap: nowrap;
 }
     
 </style>

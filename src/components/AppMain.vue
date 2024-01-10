@@ -77,8 +77,9 @@
                 </div>
             </section>
        </article>
-
+       
        <ProdottiMain2/>
+
       
     </section>
     <section class="testimonials">
@@ -154,9 +155,13 @@
     </div>
     <!--
     <section>quattro cards</section>-->
-    <section class="container">
+    <section class="ultimi-quattro container">
         <div class="row">
             <ProdottiMain3/>
+            <div class="text-center">
+                <button>Read all article</button>
+            </div>
+            
         </div>
         
     </section>
@@ -664,6 +669,18 @@ export default {
         font-size: 10px;
     }
 }
-
+.ultimi-quattro{
+    button{
+        border-radius: 20px;
+        background-color: #539f5b;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        font-size: 10px;
+        margin-bottom: 30px;
+        width: 100px;
+        
+    }
+}
     
 </style>

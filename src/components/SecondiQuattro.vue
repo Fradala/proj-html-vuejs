@@ -1,6 +1,6 @@
 <template lang="">
     <article>
-        <img src="" alt="">
+        <img :src="getImagePath(`../assets/${immagine}`) " alt="immagine prodotto">
         <p>
             {{ oggetto }}
         </p>
@@ -19,6 +19,18 @@ export default {
         'oggetto',
         'prezzo',
     ],
+
+    data() {
+        return {
+            imageName: 'immagine'
+        };
+    },
+
+    methods: {
+        getImagePath: function(imgPath) {
+            return new URL(imgPath, import.meta.url).href;
+        }
+    }
     
 }
 </script>

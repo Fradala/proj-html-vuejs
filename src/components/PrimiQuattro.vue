@@ -1,7 +1,7 @@
 <template>
-    <article>
+    <article class="quadrato">
 
-        <!--<img :src="getImagePath(`../assets${imageName}`)" alt="">-->
+        <img :src="getImagePath(`../assets/${immagine}`) " alt="immagine prodotto">
        
 
         <p>
@@ -19,22 +19,28 @@ export default {
         'oggetto'
     ],
 
-    /*data() {
+    data() {
         return {
             imageName: 'immagine'
-        }
+        };
     },
 
     methods: {
-        getImagePath: functionI(imgPath){
+        getImagePath: function(imgPath) {
             return new URL(imgPath, import.meta.url).href;
         }
-    },*/
+    }
 
     
     
-}
+};
 </script>
-<style lang="">
+<style lang="scss">
+
+
+.quadrato{
+    display: flex;
+    
+}
     
 </style>
