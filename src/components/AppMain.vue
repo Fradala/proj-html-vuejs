@@ -9,7 +9,9 @@
     </div>
     <section class="container">
         <!--qui ci vanno le 4 card-->
-        <PrimeQuattroCards/>
+       
+        <ProdottiMain1/>
+
         <!--qui ci sono le 3 caselle per il cibo-->
        <article class="row d-flex mt-5">
             <div class="casella  text-center">
@@ -75,7 +77,9 @@
                 </div>
             </section>
        </article>
-       <SecondeQuattroCards/>
+
+       <ProdottiMain2/>
+      
     </section>
     <section class="testimonials">
         <article class="container mt-5">
@@ -150,7 +154,14 @@
     </div>
     <!--
     <section>quattro cards</section>-->
-    <TerzeQuattroCards/>
+    <section class="container">
+        <div class="row">
+            <ProdottiMain3/>
+        </div>
+        
+    </section>
+    
+    
 
     <section class="due-animali d-flex text-center">
         <div class="cane">
@@ -301,18 +312,20 @@
 </template>
 <script>
 
-import PrimeQuattroCards from './PrimeQuattroCards.vue';
-import SecondeQuattroCards from './SecondeQuattroCards.vue';
-import TerzeQuattroCards from './TerzeQuattroCards.vue';
+import ProdottiMain1 from './ProdottiMain1.vue';
+import ProdottiMain2 from './ProdottiMain2.vue';
+import ProdottiMain3 from './ProdottiMain3.vue';
+
 export default {
     name: 'AppMain',
 
     components: {
-        PrimeQuattroCards,
-        SecondeQuattroCards,
-        TerzeQuattroCards,
-
+        ProdottiMain1,
+        ProdottiMain2,
+        ProdottiMain3,
     }
+
+    
 
     
     

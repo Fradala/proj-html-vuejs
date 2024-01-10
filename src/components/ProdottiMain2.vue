@@ -1,16 +1,23 @@
 <template lang="">
-    <div>
-        <img src="../assets/images/product-21-200x200.jpg" alt="">
+     <section>
+        <SecondiQuattro class="quadrati" v-for="prodotto in prodotti"
+            :immagine="prodotto.foto" :oggetto="prodotto.prodotto" :prezzo="prodotto.price"
+        />
+
         
-    </div>
+    </section>
 </template>
 <script>
+import SecondiQuattro from './SecondiQuattro.vue';
 export default {
+
+    components: {
+        SecondiQuattro,
+    },
 
     data() {
         return {
             prodotti: [
-
                 {
                     foto: '../assets/images/product-21-200x200.jpg',
                     prodotto: 'Transport cage',
@@ -31,19 +38,8 @@ export default {
                     prodotto: 'Colorful cat leash',
                     price: '$25,00',
                 },
-                
-            ],
-        
+            ]
         }
-    },
-
-    props: {
-       prodotti: {
-            type: Array,
-            required: true,
-       }
-    
-
     },
     
 }
@@ -51,4 +47,11 @@ export default {
 <style lang="scss">
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
+
+.quadrati{
+    display: flex;
+    width: calc((100% / 4) - 10px);
+    flex-wrap: wrap;
+}
+    
 </style>
