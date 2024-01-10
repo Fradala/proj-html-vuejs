@@ -38,13 +38,20 @@ export default {
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 
+img{
+    width: 100%;
+}
+
+
 .oggetto{
     font-size: 15px;
+    font-family: 'Merriweather', serif;
 
 }
 
 .prezzo{
     font-size: 10px;
+    font-family: 'Merriweather', serif;
 }
     
 </style>

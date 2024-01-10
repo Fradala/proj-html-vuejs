@@ -44,11 +44,19 @@ export default {
 .testo{
     font-size: 10px;
     margin-top: 20px;
+    margin-bottom: 3px;
+    font-family: 'Merriweather', serif;
 
 }
 
 .data{
-    font-size: 5px;
+    font-size: 10px;
+    margin-bottom: 2rem;
+    font-family: 'Merriweather', serif;
+}
+
+img{
+    width: 100%;
 }
 
 

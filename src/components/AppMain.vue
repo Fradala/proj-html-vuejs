@@ -79,7 +79,7 @@
                 </div>
             </section>
        </article>
-       <section class="text-center">
+       <section class="text-center mt-4">
             <ProdottiMain2/>
        </section>
        
@@ -149,7 +149,7 @@
 
         </div>
    </article>
-    <div class="text-center mt-5">
+    <div class="titolo-sec-quadrati text-center mt-5">
         <h4 class="mb-4">
             Get the best tips & tricks
         </h4>
@@ -239,7 +239,7 @@
 
     </section>
     <section class="container">
-        <div class="text-center mt-5">
+        <div class="titolo-sei-quadrati text-center mt-5">
             <h4>
                 New products arrival
             </h4>
@@ -247,9 +247,9 @@
                 Latest products
             </p>
 
-        </div>
-
-
+        </div>  
+    </section>
+    <section class="container">
         <div class="d-flex sei-prodotti">
             <div>
                 <img src="../assets/images/product-8-200x200.jpg" alt="letto per cani">
@@ -313,7 +313,6 @@
             </div>
 
         </div>
-        
     </section>
 
     
@@ -415,6 +414,8 @@ export default {
         color: white;
         display: flex;
         align-items: center;
+
+        
 
 
         h3{
@@ -565,6 +566,15 @@ export default {
     
 }
 
+.titolo-sec-quadrati{
+    h4{
+        font-family: 'Merriweather', serif;
+    }
+    p{
+        font-family: 'Libre Franklin', sans-serif;
+    }
+}
+
 .due-animali{
 
     .cane{
@@ -659,22 +669,46 @@ export default {
 
 }
 
+.titolo-sei-quadrati{
+    margin-bottom: 3rem;
+    h4{
+        font-family: 'Merriweather', serif;
+    }
+
+    p{
+        font-family: 'Libre Franklin', sans-serif;
+    }
+}
+
 
 .sei-prodotti{
-    margin: auto;
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    width: 80%;
     flex-wrap: wrap;
+    margin: 0 auto;
+    
+    
+
     div{
-        width: calc(100% / 3);
+        width: calc((100% / 3) - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
+        
+        img{
+            width: 100%;
+        }
+       
     }
 
     .descrizione-ogg{
         font-size: 15px;
+        margin-bottom: 5px;
     }
 
     .prezzo{
         font-size: 10px;
+        margin-bottom: 3rem;
     }
 }
 .ultimi-quattro{

@@ -42,10 +42,15 @@ export default {
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 
+img{
+    width: 100%;
+}
+
 
 .oggetto{
     font-size: 15px;
     margin-top: 20px;
+    font-family: 'Merriweather', serif;
 
 }
 
