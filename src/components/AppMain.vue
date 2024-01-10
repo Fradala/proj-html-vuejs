@@ -9,7 +9,7 @@
     </div>
     <section class="container">
         <!--qui ci vanno le 4 card-->
-        <div class="primi-quattro">
+        <div class="primi-quattro text-center pt-3">
             <ProdottiMain1/>
         </div>
        
@@ -79,8 +79,10 @@
                 </div>
             </section>
        </article>
+       <section class="text-center">
+            <ProdottiMain2/>
+       </section>
        
-       <ProdottiMain2/>
 
       
     </section>
@@ -148,7 +150,7 @@
         </div>
    </article>
     <div class="text-center mt-5">
-        <h4>
+        <h4 class="mb-4">
             Get the best tips & tricks
         </h4>
         <p class="fs-7">
@@ -157,10 +159,12 @@
     </div>
     <!--
     <section>quattro cards</section>-->
-    <section class="ultimi-quattro container">
+    <section class="ultimi-quattro container mt-5">
         <div class="row">
-            <ProdottiMain3/>
-            <div class="text-center">
+            <section class="text-center">
+                <ProdottiMain3/>
+            </section>
+            <div class="text-center mt-3 mb-3">
                 <button>Read all article</button>
             </div>
             
@@ -342,13 +346,7 @@ export default {
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 
-.primi-quattro{
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% / 4);
-   
-}
+
 
 
 .titoletto{

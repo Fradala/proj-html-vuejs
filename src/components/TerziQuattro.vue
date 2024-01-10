@@ -43,6 +43,7 @@ export default {
 
 .testo{
     font-size: 10px;
+    margin-top: 20px;
 
 }
 

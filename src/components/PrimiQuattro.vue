@@ -8,6 +8,8 @@
             {{ oggetto }}
         </p>
 
+       
+
     </article>
 </template>
 <script>
@@ -16,7 +18,8 @@ export default {
 
     props: [
         'immagine',
-        'oggetto'
+        'oggetto',
+        
     ],
 
     data() {
@@ -42,6 +45,7 @@ export default {
 
 .oggetto{
     font-size: 15px;
+    margin-top: 20px;
 
 }
 

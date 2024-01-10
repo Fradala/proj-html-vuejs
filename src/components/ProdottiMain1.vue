@@ -1,7 +1,7 @@
 <template >
     <section class="quadrati">
         <PrimiQuattro v-for="prodotto in prodotti"
-            :immagine="prodotto.foto" :oggetto="prodotto.oggetto"
+            :immagine="prodotto.foto" :oggetto="prodotto.oggetto" 
         />
 
         
@@ -26,18 +26,22 @@ export default {
                 {
                     foto: '../assets/images/product-9-200x200.jpg',
                     oggetto: 'Bed (1)',
+                    
                 },
                 {
                     foto: '../assets/images/product-3-200x200.jpg',
                     oggetto: 'Food (6)',
+                    
                 },
                 {
                     foto: '../assets/images/product-2-200x200.jpg',
                     oggetto: 'Toys (6)',
+                    
                 },
                 {
                     foto: '../assets/images/product-4-200x200.jpg',
                     oggetto: 'Transport (6)',
+                    
                 },
             ],
 

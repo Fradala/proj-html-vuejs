@@ -1,9 +1,9 @@
-<template lang="">
+<template >
      <section class="quadrati">
         <SecondiQuattro  v-for="prodotto in prodotti"
             :immagine="prodotto.foto" :oggetto="prodotto.prodotto" :prezzo="prodotto.price"
         />
-
+        
         
     </section>
 </template>
