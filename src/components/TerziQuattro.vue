@@ -1,10 +1,10 @@
 <template lang="">
     <article>
         <img :src="getImagePath(`../assets/${immagine}`) " alt="immagine prodotto">
-        <p>
+        <p class="testo">
             {{ testo }}
         </p>
-        <p>
+        <p class="data">
             {{ data }}
         </p>
 
@@ -38,6 +38,17 @@ export default {
 }
 </script>
 <style lang="scss">
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
+
+.testo{
+    font-size: 10px;
+
+}
+
+.data{
+    font-size: 5px;
+}
 
 
 

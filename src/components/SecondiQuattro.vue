@@ -1,10 +1,10 @@
 <template lang="">
     <article>
         <img :src="getImagePath(`../assets/${immagine}`) " alt="immagine prodotto">
-        <p>
+        <p class="oggetto">
             {{ oggetto }}
         </p>
-        <p>
+        <p class="prezzo">
             {{ prezzo }}
         </p>
     </article>
@@ -34,6 +34,17 @@ export default {
     
 }
 </script>
-<style lang="">
+<style lang="scss">
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
+
+.oggetto{
+    font-size: 15px;
+
+}
+
+.prezzo{
+    font-size: 10px;
+}
     
 </style>

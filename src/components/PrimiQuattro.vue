@@ -4,7 +4,7 @@
         <img :src="getImagePath(`../assets/${immagine}`) " alt="immagine prodotto">
        
 
-        <p>
+        <p class="oggetto">
             {{ oggetto }}
         </p>
 
@@ -36,11 +36,16 @@ export default {
 };
 </script>
 <style lang="scss">
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
 
 
-.quadrato{
-    display: flex;
-    
+.oggetto{
+    font-size: 15px;
+
 }
+
+
+
     
 </style>

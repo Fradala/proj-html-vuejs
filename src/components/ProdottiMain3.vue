@@ -1,6 +1,6 @@
 <template>
-    <section>
-        <TerziQuattro class="quadrati" v-for="prodotto in prodotti"
+    <section class="quadrati">
+        <TerziQuattro v-for="prodotto in prodotti"
             :immagine="prodotto.foto" :testo="prodotto.testo" :data="prodotto.sottoTesto"
         />
 
@@ -50,11 +50,9 @@ export default {
 
 .quadrati{
     display: flex;
-    width: calc((100% / 4) - 10px);
-    flex-wrap: wrap;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-top: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
     flex-wrap: wrap;
 }
 

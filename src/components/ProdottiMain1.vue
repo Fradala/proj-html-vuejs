@@ -1,10 +1,10 @@
 <template >
-    <section>
-        <PrimiQuattro class="quadrati" v-for="prodotto in prodotti"
+    <section class="quadrati">
+        <PrimiQuattro v-for="prodotto in prodotti"
             :immagine="prodotto.foto" :oggetto="prodotto.oggetto"
         />
 
-        <img src="../assets/images/product-9-150x150.jpg" alt="">
+        
     </section>
 </template>
 <script>
@@ -14,7 +14,7 @@ import PrimiQuattro from './PrimiQuattro.vue';
 
 
 export default {
-    name: 'ProdottiMain1',
+   
 
     components: {
         PrimiQuattro,
@@ -24,19 +24,19 @@ export default {
         return {
             prodotti: [
                 {
-                    foto: '../assets/images/product-9-150x150.jpg',
+                    foto: '../assets/images/product-9-200x200.jpg',
                     oggetto: 'Bed (1)',
                 },
                 {
-                    foto: '../assets/images/product-3-150x150.jpg',
+                    foto: '../assets/images/product-3-200x200.jpg',
                     oggetto: 'Food (6)',
                 },
                 {
-                    foto: '../assets/images/product-2-150x150.jpg',
+                    foto: '../assets/images/product-2-200x200.jpg',
                     oggetto: 'Toys (6)',
                 },
                 {
-                    foto: '../assets/images/product-4-150x150.jpg',
+                    foto: '../assets/images/product-4-200x200.jpg',
                     oggetto: 'Transport (6)',
                 },
             ],
@@ -54,13 +54,13 @@ export default {
 @use '../styles/partials/mixins' as *;
 
 .quadrati{
+    
     display: flex;
-    flex-direction: row;
-    width: calc((100% / 4) - 10px);
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-top: 10px;
-    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+   
 }
     
 </style>

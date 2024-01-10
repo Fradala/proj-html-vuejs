@@ -9,8 +9,10 @@
     </div>
     <section class="container">
         <!--qui ci vanno le 4 card-->
+        <div class="primi-quattro">
+            <ProdottiMain1/>
+        </div>
        
-        <ProdottiMain1/>
 
         <!--qui ci sono le 3 caselle per il cibo-->
        <article class="row d-flex mt-5">
@@ -339,6 +341,14 @@ export default {
 <style lang="scss">
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
+
+.primi-quattro{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 4);
+   
+}
 
 
 .titoletto{
